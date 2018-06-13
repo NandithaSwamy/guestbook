@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ["*"]
 ELASTIC_APM = {
    'SERVICE_NAME': 'elasticapm',
    'SECRET_TOKEN': 'test',
-   'SERVER_URL': 'http://localhost:8200',
+   'SERVER_URL': 'http://10.11.100.113:8200',
    'DEBUG': True,
 }
 
@@ -121,6 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+UI_ROOT = os.path.join(BASE_DIR, 'templates')
 
 LOGGING = {
     'version': 1,
